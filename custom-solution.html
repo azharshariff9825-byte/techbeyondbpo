@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Get a Custom Solution - Techbeyond</title>
+  <meta name="description" content="Tell us about your business requirements, challenges, and goals. Our team will create a tailored solution for you.">
+  <meta name="keywords" content="Custom BPO solution, Business inquiry, Techbeyond custom services">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    /* Custom Solution Page Custom Styling */
+    .custom-hero {
+      padding: 80px 0 60px 0;
+      background: linear-gradient(135deg, rgba(248, 249, 250, 0.9) 0%, rgba(233, 236, 239, 0.5) 100%);
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    .custom-hero h1 {
+      font-size: 2.75rem;
+      font-weight: 800;
+      color: var(--heading-color, #111);
+      line-height: 1.25;
+      margin-bottom: 20px;
+    }
+
+    .custom-hero p {
+      font-size: 1.15rem;
+      color: var(--default-color, #555);
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+    .custom-section-card {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 35px 30px;
+      margin-bottom: 35px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+      border: 1px solid rgba(0, 0, 0, 0.06);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .custom-section-card:hover {
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.07);
+    }
+
+    .custom-section-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 25px;
+      padding-bottom: 15px;
+      border-bottom: 2px solid var(--accent-color, #0d6efd);
+    }
+
+    .custom-section-badge {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: var(--accent-color, #0d6efd);
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 1.1rem;
+      margin-right: 15px;
+      flex-shrink: 0;
+    }
+
+    .custom-section-header h3 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      margin: 0;
+      color: var(--heading-color, #111);
+    }
+
+    /* Service Checkbox Cards */
+    .service-checkbox-card {
+      position: relative;
+      border: 2px solid #e9ecef;
+      border-radius: 12px;
+      padding: 20px 15px;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      background: #f8f9fa;
+      height: 100%;
+      user-select: none;
+    }
+
+    .service-checkbox-card input[type="checkbox"] {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      width: 18px;
+      height: 18px;
+      accent-color: var(--accent-color, #0d6efd);
+      cursor: pointer;
+    }
+
+    .service-checkbox-card .icon-box {
+      font-size: 2rem;
+      color: var(--accent-color, #0d6efd);
+      margin-bottom: 12px;
+      transition: transform 0.2s ease;
+    }
+
+    .service-checkbox-card h4 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin: 0;
+      color: var(--heading-color, #222);
+    }
+
+    .service-checkbox-card:hover {
+      border-color: var(--accent-color, #0d6efd);
+      background: #ffffff;
+      transform: translateY(-3px);
+    }
+
+    .service-checkbox-card.selected {
+      border-color: var(--accent-color, #0d6efd);
+      background: rgba(13, 110, 253, 0.05);
+      box-shadow: 0 4px 12px rgba(13, 110, 253, 0.15);
+    }
+
+    .service-checkbox-card.selected .icon-box {
+      transform: scale(1.1);
+    }
+
+    /* Goal Checkboxes */
+    .goal-pill {
+      display: inline-flex;
+      align-items: center;
+      padding: 10px 20px;
+      border: 2px solid #e9ecef;
+      border-radius: 50px;
+      background: #f8f9fa;
+      cursor: pointer;
+      font-weight: 500;
+      color: #333;
+      margin-right: 10px;
+      margin-bottom: 12px;
+      transition: all 0.2s ease;
+      user-select: none;
+    }
+
+    .goal-pill input[type="checkbox"] {
+      margin-right: 8px;
+      width: 16px;
+      height: 16px;
+      accent-color: var(--accent-color, #0d6efd);
+    }
+
+    .goal-pill:hover {
+      border-color: var(--accent-color, #0d6efd);
+      background: #ffffff;
+    }
+
+    .goal-pill.selected {
+      border-color: var(--accent-color, #0d6efd);
+      background: rgba(13, 110, 253, 0.08);
+      color: var(--accent-color, #0d6efd);
+      font-weight: 600;
+    }
+
+    /* Contact Methods */
+    .contact-method-card {
+      border: 2px solid #e9ecef;
+      border-radius: 12px;
+      padding: 16px;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      background: #f8f9fa;
+      height: 100%;
+      user-select: none;
+    }
+
+    .contact-method-card input[type="radio"] {
+      display: none;
+    }
+
+    .contact-method-card i {
+      font-size: 1.75rem;
+      color: var(--accent-color, #0d6efd);
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .contact-method-card span {
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--heading-color, #222);
+    }
+
+    .contact-method-card:hover {
+      border-color: var(--accent-color, #0d6efd);
+      background: #ffffff;
+    }
+
+    .contact-method-card.selected {
+      border-color: var(--accent-color, #0d6efd);
+      background: rgba(13, 110, 253, 0.08);
+      box-shadow: 0 4px 12px rgba(13, 110, 253, 0.12);
+    }
+
+    /* File Upload Box */
+    .upload-area {
+      border: 2px dashed #cbd5e1;
+      border-radius: 12px;
+      padding: 30px 20px;
+      text-align: center;
+      background: #f8fafc;
+      cursor: pointer;
+      transition: all 0.25s ease;
+    }
+
+    .upload-area:hover {
+      border-color: var(--accent-color, #0d6efd);
+      background: #ffffff;
+    }
+
+    .upload-icon {
+      font-size: 2.5rem;
+      color: var(--accent-color, #0d6efd);
+      margin-bottom: 10px;
+    }
+
+    /* Form Fields */
+    .form-control, .form-select {
+      border-radius: 8px;
+      padding: 12px 16px;
+      border: 1.5px solid #dee2e6;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .form-control:focus, .form-select:focus {
+      border-color: var(--accent-color, #0d6efd);
+      box-shadow: 0 0 0 4px rgba(13, 110, 253, 0.12);
+    }
+
+    .form-label {
+      font-weight: 600;
+      color: var(--heading-color, #333);
+      margin-bottom: 8px;
+      font-size: 0.92rem;
+    }
+
+    .btn-custom-submit {
+      background: var(--accent-color, #0d6efd);
+      color: #ffffff;
+      padding: 16px 40px;
+      font-size: 1.15rem;
+      font-weight: 700;
+      border-radius: 50px;
+      border: none;
+      box-shadow: 0 8px 25px rgba(13, 110, 253, 0.3);
+      transition: all 0.3s ease;
+    }
+
+    .btn-custom-submit:hover {
+      background: color-mix(in srgb, var(--accent-color, #0d6efd), #000 15%);
+      transform: translateY(-2px);
+      box-shadow: 0 12px 30px rgba(13, 110, 253, 0.4);
+      color: #fff;
+    }
+
+    /* Thank You View */
+    #thank-you-view {
+      display: none;
+      padding: 60px 20px;
+      text-align: center;
+      background: #ffffff;
+      border-radius: 20px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+      margin-top: 20px;
+    }
+
+    .thank-you-icon {
+      width: 90px;
+      height: 90px;
+      background: rgba(25, 135, 84, 0.1);
+      color: #198754;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 3rem;
+      margin: 0 auto 25px auto;
+      animation: pulseCheck 2s infinite;
+    }
+
+    @keyframes pulseCheck {
+      0% { box-shadow: 0 0 0 0 rgba(25, 135, 84, 0.4); }
+      70% { box-shadow: 0 0 0 20px rgba(25, 135, 84, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(25, 135, 84, 0); }
+    }
+  </style>
+</head>
+
+<body class="starter-page-page">
+
+  <!-- Header -->
+  <header id="header" class="header d-flex align-items-center sticky-top">
+    <div class="container position-relative d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
+        <h1 class="sitename">TechBeyond BPO</h1>
+      </a>
+
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html#hero">Home</a></li>
+          <li><a href="index.html#about">About Us</a></li>
+          <li><a href="index.html#services">Services</a></li>
+          <li><a href="index.html#portfolio">Industries</a></li>
+          <li><a href="index.html#team">Why Us</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+      </nav>
+
+      <div class="header-social-links">
+        <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="main">
+
+    <!-- 1. Hero Section -->
+    <section class="custom-hero">
+      <div class="container" data-aos="fade-up">
+        <div class="row align-items-center">
+          <div class="col-lg-7">
+            <h1>Let’s Build the Right Solution for Your Business</h1>
+            <p>Tell us about your business requirements, challenges, and goals. Our team will create a tailored solution for you.</p>
+            <a href="#custom-solution-form" class="btn btn-primary btn-lg rounded-pill px-4 py-3 font-weight-bold" style="background: var(--accent-color, #0d6efd); border: none;">
+              Request a Custom Solution <i class="bi bi-arrow-down-short ms-2"></i>
+            </a>
+          </div>
+          <div class="col-lg-5 text-center mt-4 mt-lg-0">
+            <img src="assets/img/services/services-8.webp" alt="Custom Solution Illustration" class="img-fluid rounded-4 shadow-lg" style="max-height: 340px; object-fit: cover;">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Inquiry Form Container -->
+    <section class="py-5" id="custom-solution-form">
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <!-- Main Form -->
+        <form id="inquiryForm" onsubmit="handleCustomSolutionSubmit(event)">
+
+          <!-- 2. What Can We Help You With? -->
+          <div class="custom-section-card">
+            <div class="custom-section-header">
+              <div class="custom-section-badge">1</div>
+              <h3>What Can We Help You With?</h3>
+            </div>
+            <p class="text-muted mb-4">Select all services relevant to your project:</p>
+            
+            <div class="row g-3">
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="service-checkbox-card" onclick="toggleServiceCard(this)">
+                  <input type="checkbox" name="services[]" value="Web Development">
+                  <div class="icon-box"><i class="bi bi-laptop"></i></div>
+                  <h4>Web Development</h4>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="service-checkbox-card" onclick="toggleServiceCard(this)">
+                  <input type="checkbox" name="services[]" value="App Development">
+                  <div class="icon-box"><i class="bi bi-phone"></i></div>
+                  <h4>App Development</h4>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="service-checkbox-card" onclick="toggleServiceCard(this)">
+                  <input type="checkbox" name="services[]" value="Business Process Outsourcing">
+                  <div class="icon-box"><i class="bi bi-gear-wide-connected"></i></div>
+                  <h4>Business Process Outsourcing</h4>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="service-checkbox-card" onclick="toggleServiceCard(this)">
+                  <input type="checkbox" name="services[]" value="Customer Support">
+                  <div class="icon-box"><i class="bi bi-headset"></i></div>
+                  <h4>Customer Support</h4>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="service-checkbox-card" onclick="toggleServiceCard(this)">
+                  <input type="checkbox" name="services[]" value="Data Entry & Management">
+                  <div class="icon-box"><i class="bi bi-file-earmark-spreadsheet"></i></div>
+                  <h4>Data Entry &amp; Management</h4>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="service-checkbox-card" onclick="toggleServiceCard(this)">
+                  <input type="checkbox" name="services[]" value="Digital Marketing">
+                  <div class="icon-box"><i class="bi bi-megaphone"></i></div>
+                  <h4>Digital Marketing</h4>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="service-checkbox-card" onclick="toggleServiceCard(this)">
+                  <input type="checkbox" name="services[]" value="Sales & Lead Generation">
+                  <div class="icon-box"><i class="bi bi-graph-up-arrow"></i></div>
+                  <h4>Sales &amp; Lead Generation</h4>
+                </div>
+              </div>
+              <div class="col-6 col-md-4 col-lg-3">
+                <div class="service-checkbox-card" onclick="toggleServiceCard(this)">
+                  <input type="checkbox" name="services[]" value="Other">
+                  <div class="icon-box"><i class="bi bi-plus-circle"></i></div>
+                  <h4>Other</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Tell Us About Your Business -->
+          <div class="custom-section-card">
+            <div class="custom-section-header">
+              <div class="custom-section-badge">2</div>
+              <h3>Tell Us About Your Business</h3>
+            </div>
+            
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label for="fullName" class="form-label">Full Name *</label>
+                <input type="text" class="form-control" id="fullName" required placeholder="John Doe">
+              </div>
+              <div class="col-md-6">
+                <label for="companyName" class="form-label">Company Name *</label>
+                <input type="text" class="form-control" id="companyName" required placeholder="Acme Enterprises">
+              </div>
+              <div class="col-md-6">
+                <label for="businessEmail" class="form-label">Business Email *</label>
+                <input type="email" class="form-control" id="businessEmail" required placeholder="john@company.com">
+              </div>
+              <div class="col-md-6">
+                <label for="phoneNumber" class="form-label">Phone Number</label>
+                <input type="tel" class="form-control" id="phoneNumber" placeholder="+1 (555) 000-0000">
+              </div>
+              <div class="col-md-6">
+                <label for="industry" class="form-label">Industry</label>
+                <select class="form-select" id="industry">
+                  <option value="">Select Industry</option>
+                  <option value="E-commerce & Retail">E-commerce &amp; Retail</option>
+                  <option value="Healthcare">Healthcare</option>
+                  <option value="Banking & Finance">Banking &amp; Finance</option>
+                  <option value="Travel & Hospitality">Travel &amp; Hospitality</option>
+                  <option value="Real Estate">Real Estate</option>
+                  <option value="IT & Software">IT &amp; Software</option>
+                  <option value="Education">Education</option>
+                  <option value="Logistics">Logistics</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+              <div class="col-md-6">
+                <label for="websiteUrl" class="form-label">Website URL</label>
+                <input type="url" class="form-control" id="websiteUrl" placeholder="https://www.yourcompany.com">
+              </div>
+              <div class="col-md-6">
+                <label for="country" class="form-label">Country</label>
+                <input type="text" class="form-control" id="country" placeholder="United States, India, UK, etc.">
+              </div>
+              <div class="col-md-6">
+                <label for="companySize" class="form-label">Company Size</label>
+                <select class="form-select" id="companySize">
+                  <option value="">Select Company Size</option>
+                  <option value="1-10 employees">1-10 employees</option>
+                  <option value="11-50 employees">11-50 employees</option>
+                  <option value="51-200 employees">51-200 employees</option>
+                  <option value="201-500 employees">201-500 employees</option>
+                  <option value="500+ employees">500+ employees</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Your Requirements -->
+          <div class="custom-section-card">
+            <div class="custom-section-header">
+              <div class="custom-section-badge">3</div>
+              <h3>Your Requirements</h3>
+            </div>
+            
+            <div class="mb-4">
+              <label for="requirements" class="form-label">Requirement Details *</label>
+              <textarea class="form-control" id="requirements" rows="5" required placeholder="Describe your requirements, current challenges, and what you want us to achieve..."></textarea>
+            </div>
+
+            <div class="row g-3">
+              <div class="col-md-6 col-lg-3">
+                <label for="projectType" class="form-label">Project Type</label>
+                <select class="form-select" id="projectType">
+                  <option value="">Select Type</option>
+                  <option value="New Project">New Project</option>
+                  <option value="Process Optimization">Process Optimization</option>
+                  <option value="Dedicated Team Setup">Dedicated Team Setup</option>
+                  <option value="Consultation">Consultation</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <label for="estimatedBudget" class="form-label">Estimated Budget</label>
+                <select class="form-select" id="estimatedBudget">
+                  <option value="">Select Budget</option>
+                  <option value="Under $1,000">Under $1,000</option>
+                  <option value="$1,000 - $5,000">$1,000 - $5,000</option>
+                  <option value="$5,000 - $10,000">$5,000 - $10,000</option>
+                  <option value="$10,000+">$10,000+</option>
+                </select>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <label for="expectedTimeline" class="form-label">Expected Timeline</label>
+                <select class="form-select" id="expectedTimeline">
+                  <option value="">Select Timeline</option>
+                  <option value="Immediate (< 1 month)">Immediate (&lt; 1 month)</option>
+                  <option value="1 - 3 months">1 - 3 months</option>
+                  <option value="3 - 6 months">3 - 6 months</option>
+                  <option value="Flexible">Flexible</option>
+                </select>
+              </div>
+              <div class="col-md-6 col-lg-3">
+                <label for="employeeCount" class="form-label">Number of Employees/Users</label>
+                <select class="form-select" id="employeeCount">
+                  <option value="">Select Range</option>
+                  <option value="1 - 5 agents/users">1 - 5 agents/users</option>
+                  <option value="6 - 20 agents/users">6 - 20 agents/users</option>
+                  <option value="20+ agents/users">20+ agents/users</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. Your Business Goals -->
+          <div class="custom-section-card">
+            <div class="custom-section-header">
+              <div class="custom-section-badge">4</div>
+              <h3>Your Business Goals</h3>
+            </div>
+            <p class="text-muted mb-3">Select your primary objectives:</p>
+
+            <div class="d-flex flex-wrap">
+              <label class="goal-pill" onclick="toggleGoalPill(this)">
+                <input type="checkbox" name="goals[]" value="Reduce Costs"> Reduce Costs
+              </label>
+              <label class="goal-pill" onclick="toggleGoalPill(this)">
+                <input type="checkbox" name="goals[]" value="Increase Sales"> Increase Sales
+              </label>
+              <label class="goal-pill" onclick="toggleGoalPill(this)">
+                <input type="checkbox" name="goals[]" value="Improve Customer Experience"> Improve Customer Experience
+              </label>
+              <label class="goal-pill" onclick="toggleGoalPill(this)">
+                <input type="checkbox" name="goals[]" value="Automate Processes"> Automate Processes
+              </label>
+              <label class="goal-pill" onclick="toggleGoalPill(this)">
+                <input type="checkbox" name="goals[]" value="Scale Operations"> Scale Operations
+              </label>
+              <label class="goal-pill" onclick="toggleGoalPill(this)">
+                <input type="checkbox" name="goals[]" value="Improve Productivity"> Improve Productivity
+              </label>
+              <label class="goal-pill" onclick="toggleGoalPill(this)">
+                <input type="checkbox" name="goals[]" value="Other"> Other
+              </label>
+            </div>
+          </div>
+
+          <!-- 6. Upload Files (Optional) -->
+          <div class="custom-section-card">
+            <div class="custom-section-header">
+              <div class="custom-section-badge">5</div>
+              <h3>Upload Files (Optional)</h3>
+            </div>
+            <p class="text-muted mb-3">Have documents, requirements, or references? Upload them here.</p>
+
+            <div class="upload-area" onclick="document.getElementById('fileUploadInput').click()">
+              <div class="upload-icon"><i class="bi bi-cloud-arrow-up"></i></div>
+              <h5 class="fw-bold mb-1">Click or drag files here to upload</h5>
+              <p class="text-muted small mb-0">Supported Formats: PDF, DOC, XLSX, JPG, PNG (Max 10MB)</p>
+              <input type="file" id="fileUploadInput" multiple accept=".pdf,.doc,.docx,.xlsx,.jpg,.png" style="display: none;" onchange="handleFileSelect(event)">
+            </div>
+            <div id="fileListPreview" class="mt-3"></div>
+          </div>
+
+          <!-- 7. Preferred Contact Method -->
+          <div class="custom-section-card">
+            <div class="custom-section-header">
+              <div class="custom-section-badge">6</div>
+              <h3>Preferred Contact Method</h3>
+            </div>
+            
+            <div class="row g-3">
+              <div class="col-6 col-md-3">
+                <label class="contact-method-card selected" onclick="selectContactMethod(this)">
+                  <input type="radio" name="contactMethod" value="Email" checked>
+                  <i class="bi bi-envelope"></i>
+                  <span>Email</span>
+                </label>
+              </div>
+              <div class="col-6 col-md-3">
+                <label class="contact-method-card" onclick="selectContactMethod(this)">
+                  <input type="radio" name="contactMethod" value="Phone Call">
+                  <i class="bi bi-telephone"></i>
+                  <span>Phone Call</span>
+                </label>
+              </div>
+              <div class="col-6 col-md-3">
+                <label class="contact-method-card" onclick="selectContactMethod(this)">
+                  <input type="radio" name="contactMethod" value="WhatsApp">
+                  <i class="bi bi-whatsapp"></i>
+                  <span>WhatsApp</span>
+                </label>
+              </div>
+              <div class="col-6 col-md-3">
+                <label class="contact-method-card" onclick="selectContactMethod(this)">
+                  <input type="radio" name="contactMethod" value="Video Meeting">
+                  <i class="bi bi-camera-video"></i>
+                  <span>Video Meeting</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- 8. Additional Information -->
+          <div class="custom-section-card">
+            <div class="custom-section-header">
+              <div class="custom-section-badge">7</div>
+              <h3>Additional Information</h3>
+            </div>
+            
+            <div>
+              <label for="additionalInfo" class="form-label">Anything else you'd like us to know?</label>
+              <textarea class="form-control" id="additionalInfo" rows="3" placeholder="Any specific tools, working hours, time zones, or additional context..."></textarea>
+            </div>
+          </div>
+
+          <!-- 9. Final CTA Button -->
+          <div class="text-center mt-5 mb-4">
+            <button type="submit" class="btn btn-custom-submit">
+              Get My Custom Solution <i class="bi bi-send-fill ms-2"></i>
+            </button>
+            <p class="text-muted mt-3 font-italic" style="font-size: 0.95rem;">
+              <i class="bi bi-shield-check text-success me-1"></i> Our team will review your requirements and get back to you shortly.
+            </p>
+          </div>
+
+        </form>
+
+        <!-- 10. Thank You View (Shown after form submission) -->
+        <div id="thank-you-view">
+          <div class="thank-you-icon">
+            <i class="bi bi-check-lg"></i>
+          </div>
+          <h2 class="fw-bold mb-3" style="color: var(--heading-color, #111);">Thank You!</h2>
+          <p class="lead text-secondary mb-4 mx-auto" style="max-width: 600px;">
+            We’ve received your requirements. Our team will review them and contact you soon.
+          </p>
+          <div class="d-flex justify-content-center gap-3 flex-wrap">
+            <a href="index.html" class="btn btn-primary rounded-pill px-4 py-2 font-weight-bold">
+              <i class="bi bi-house-door me-2"></i> Back to Home
+            </a>
+            <a href="index.html#services" class="btn btn-outline-primary rounded-pill px-4 py-2 font-weight-bold">
+              <i class="bi bi-grid me-2"></i> View Our Services
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer" class="footer light-background">
+    <div class="container">
+      <div class="row gy-3">
+        <div class="col-lg-3 col-md-6 d-flex">
+          <i class="bi bi-geo-alt icon"></i>
+          <div class="address">
+            <h4>Address</h4>
+            <p>No 22/8, 3rd Street aasriyar nagar,</p>
+            <p>Asnambut road, new Bethlehem, Ambur Tamilnadu.</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 d-flex">
+          <i class="bi bi-telephone icon"></i>
+          <div>
+            <h4>Contact</h4>
+            <p>
+              <strong>Phone:</strong> <span>+91 79042 52310 / +91 87540 85405</span><br>
+              <strong>Email:</strong> <span>techbeyondbpo@gmail.com</span><br>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 d-flex">
+          <i class="bi bi-clock icon"></i>
+          <div>
+            <h4>Opening Hours</h4>
+            <p>
+              <strong>Mon-Sat:</strong> <span>11AM - 23PM</span><br>
+              <strong>Sunday</strong>: <span>Closed</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6">
+          <h4>Follow Us</h4>
+          <div class="social-links d-flex">
+            <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">TechBeyond BPO</strong> <span>All Rights Reserved</span></p>
+      <div class="credits">
+        Developed by <a href="https://bootstrapmade.com/">Azhar Shariff</a> | <a href="https://bootstrapmade.com/tools/">DevTools</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+  <!-- Custom Solution Logic -->
+  <script>
+    function toggleServiceCard(cardElement) {
+      const checkbox = cardElement.querySelector('input[type="checkbox"]');
+      checkbox.checked = !checkbox.checked;
+      if (checkbox.checked) {
+        cardElement.classList.add('selected');
+      } else {
+        cardElement.classList.remove('selected');
+      }
+    }
+
+    function toggleGoalPill(pillElement) {
+      const checkbox = pillElement.querySelector('input[type="checkbox"]');
+      setTimeout(() => {
+        if (checkbox.checked) {
+          pillElement.classList.add('selected');
+        } else {
+          pillElement.classList.remove('selected');
+        }
+      }, 10);
+    }
+
+    function selectContactMethod(cardElement) {
+      document.querySelectorAll('.contact-method-card').forEach(el => el.classList.remove('selected'));
+      cardElement.classList.add('selected');
+      const radio = cardElement.querySelector('input[type="radio"]');
+      radio.checked = true;
+    }
+
+    function handleFileSelect(event) {
+      const previewContainer = document.getElementById('fileListPreview');
+      previewContainer.innerHTML = '';
+      const files = event.target.files;
+
+      if (files.length > 0) {
+        let fileListHtml = '<ul class="list-group list-group-flush small text-start">';
+        for (let i = 0; i < files.length; i++) {
+          fileListHtml += `<li class="list-group-item bg-transparent text-secondary"><i class="bi bi-file-earmark-check text-success me-2"></i> ${files[i].name} (${(files[i].size / 1024).toFixed(1)} KB)</li>`;
+        }
+        fileListHtml += '</ul>';
+        previewContainer.innerHTML = fileListHtml;
+      }
+    }
+
+    function handleCustomSolutionSubmit(event) {
+      event.preventDefault();
+      
+      const form = document.getElementById('inquiryForm');
+      const thankYouView = document.getElementById('thank-you-view');
+
+      // Hide form smoothly & show Thank You view
+      form.style.display = 'none';
+      thankYouView.style.display = 'block';
+      thankYouView.scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+
+</body>
+
+</html>
