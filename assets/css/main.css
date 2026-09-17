@@ -2992,41 +2992,44 @@ section,
 
 .service-details .service-features .feature-item {
   display: flex;
-  align-items: flex-start;
-  padding: 20px;
+  align-items: center;
+  padding: 18px 22px;
   background: var(--surface-color);
-  border-radius: 8px;
+  border-radius: 10px;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
   transition: all 0.3s ease;
+  height: 100%;
 }
 
 .service-details .service-features .feature-item:hover {
   box-shadow: 0 8px 25px color-mix(in srgb, var(--default-color), transparent 90%);
   transform: translateY(-2px);
+  border-color: var(--accent-color);
 }
 
 .service-details .service-features .feature-item .feature-icon {
   background: color-mix(in srgb, var(--accent-color), transparent 90%);
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 20px;
+  margin-right: 18px;
   flex-shrink: 0;
 }
 
 .service-details .service-features .feature-item .feature-icon i {
-  font-size: 24px;
+  font-size: 22px;
   color: var(--accent-color);
 }
 
 .service-details .service-features .feature-item .feature-content h5 {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
-  margin-bottom: 8px;
+  margin: 0;
   color: var(--heading-color);
+  line-height: 1.4;
 }
 
 .service-details .service-features .feature-item .feature-content p {
