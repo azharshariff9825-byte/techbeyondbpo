@@ -198,37 +198,33 @@
               <div class="service-menu">
                 <h4>Our Services</h4>
                 <div class="menu-list">
-                  <a href="service-details.html?service=customer-support" class="menu-item" id="menu-customer-support">
+                  <a href="service-details.html?service=customer-experience-services" class="menu-item" id="menu-customer-experience-services">
                     <i class="bi bi-arrow-right"></i>
-                    <span>Customer Support</span>
+                    <span>Customer Experience (CX) Services</span>
                   </a>
-                  <a href="service-details.html?service=telecalling-services" class="menu-item" id="menu-telecalling-services">
+                  <a href="service-details.html?service=technical-support-services" class="menu-item" id="menu-technical-support-services">
                     <i class="bi bi-arrow-right"></i>
-                    <span>Telecalling Services</span>
+                    <span>Technical Support Services</span>
                   </a>
-                  <a href="service-details.html?service=chat-support" class="menu-item" id="menu-chat-support">
+                  <a href="service-details.html?service=back-office-operations-support" class="menu-item" id="menu-back-office-operations-support">
                     <i class="bi bi-arrow-right"></i>
-                    <span>Chat Support</span>
+                    <span>Back Office &amp; Operations Support</span>
                   </a>
-                  <a href="service-details.html?service=email-support" class="menu-item" id="menu-email-support">
+                  <a href="service-details.html?service=data-management-analytics" class="menu-item" id="menu-data-management-analytics">
                     <i class="bi bi-arrow-right"></i>
-                    <span>Email Support</span>
+                    <span>Data Management &amp; Analytics</span>
                   </a>
-                  <a href="service-details.html?service=back-office-support" class="menu-item" id="menu-back-office-support">
+                  <a href="service-details.html?service=sales-telemarketing-solutions" class="menu-item" id="menu-sales-telemarketing-solutions">
                     <i class="bi bi-arrow-right"></i>
-                    <span>Back Office Support</span>
+                    <span>Sales &amp; Telemarketing Solutions</span>
                   </a>
-                  <a href="service-details.html?service=data-entry-management" class="menu-item" id="menu-data-entry-management">
+                  <a href="service-details.html?service=digital-web-solutions" class="menu-item" id="menu-digital-web-solutions">
                     <i class="bi bi-arrow-right"></i>
-                    <span>Data Entry &amp; Management</span>
+                    <span>Digital &amp; Web Solutions</span>
                   </a>
-                  <a href="service-details.html?service=digital-support-solutions" class="menu-item" id="menu-digital-support-solutions">
+                  <a href="service-details.html?service=finance-accounting-outsourcing" class="menu-item" id="menu-finance-accounting-outsourcing">
                     <i class="bi bi-arrow-right"></i>
-                    <span>Web &amp; Digital Solutions</span>
-                  </a>
-                  <a href="service-details.html?service=sales-marketing-services" class="menu-item" id="menu-sales-marketing-services">
-                    <i class="bi bi-arrow-right"></i>
-                    <span>Sales &amp; Marketing Services</span>
+                    <span>Finance &amp; Accounting Outsourcing (FAO)</span>
                   </a>
                 </div>
               </div>
@@ -373,129 +369,111 @@
 
   <!-- Custom JS to load Service Details dynamically -->
   <script>
-    // Services Data Object containing details for each of the 8 BPO services
+    // Services Data Object containing details for each of the 7 BPO services
     const servicesData = {
-      "customer-support": {
-        title: "Customer Support Services",
-        shortIntro: "Provide professional customer assistance, query resolution, complaint handling, and customer communication.",
+      "customer-experience-services": {
+        title: "Customer Experience (CX) Services",
+        shortIntro: "We deliver seamless, omnichannel support across voice, live chat, email, and social media channels 24/7. Our CX solutions focus on rapid query resolution, customer retention, and driving overall brand satisfaction.",
         image: "assets/img/services/services-8.webp",
-        badge: "24/7 Support",
-        featuresTitle: "Our Customer Support Services",
+        badge: "24/7 Omnichannel Support",
+        featuresTitle: "Key Capabilities of Our CX Services",
         features: [
-          { title: "Inbound Call Support", desc: "Handling incoming customer calls, inquiries, and service requests professionally.", icon: "bi-telephone" },
-          { title: "Customer Query Resolution", desc: "Providing quick and accurate solutions to customer questions and concerns.", icon: "bi-question-circle" },
-          { title: "Complaint Handling", desc: "Managing customer complaints efficiently and ensuring proper resolution.", icon: "bi-exclamation-triangle" },
-          { title: "Order & Account Assistance", desc: "Helping customers with orders, account information, payments, and general requests.", icon: "bi-person-gear" },
-          { title: "Customer Follow-Up", desc: "Following up with customers to ensure their concerns have been resolved.", icon: "bi-arrow-repeat" },
-          { title: "Customer Retention Support", desc: "Engaging with existing customers to improve satisfaction and loyalty.", icon: "bi-heart" }
+          { title: "Voice & Call Support", desc: "Handling inbound and outbound customer calls with professionalism and high first-contact resolution.", icon: "bi-telephone" },
+          { title: "Live Chat Assistance", desc: "Instant real-time support across web, apps, and messaging platforms to assist active visitors.", icon: "bi-chat-dots" },
+          { title: "Email & Helpdesk Management", desc: "Prompt and structured query resolution, complaint handling, and ticket tracking.", icon: "bi-envelope" },
+          { title: "Social Media Care", desc: "Active monitoring, reputation protection, and responsive customer engagement on social channels.", icon: "bi-share" },
+          { title: "Customer Retention & Loyalty", desc: "Proactive customer success strategies to retain users, reduce churn, and build brand loyalty.", icon: "bi-heart" },
+          { title: "CSAT & Quality Monitoring", desc: "Rigorous quality audits and continuous performance tracking for exceptional customer satisfaction.", icon: "bi-star" }
         ]
       },
-      "telecalling-services": {
-        title: "Telecalling Services",
-        shortIntro: "Handle inbound and outbound calls, customer follow-ups, lead calling, and appointment scheduling.",
-        image: "assets/img/services/services-2.webp",
-        badge: "Outreach & Sales",
-        featuresTitle: "Our Telecalling Services",
-        features: [
-          { title: "Inbound Telecalling", desc: "Handling incoming calls from customers and prospects.", icon: "bi-telephone-inbound" },
-          { title: "Outbound Calling", desc: "Making professional outbound calls for business communication and outreach.", icon: "bi-telephone-outbound" },
-          { title: "Lead Generation Calls", desc: "Contacting potential customers and identifying interested prospects.", icon: "bi-search" },
-          { title: "Appointment Setting", desc: "Scheduling meetings, consultations, demos, or sales appointments.", icon: "bi-calendar-event" },
-          { title: "Sales Follow-Up", desc: "Following up with potential customers to move them through the sales process.", icon: "bi-funnel" },
-          { title: "Customer Feedback Calls", desc: "Collecting customer feedback to improve products and services.", icon: "bi-chat-right-quote" },
-          { title: "Telemarketing", desc: "Promoting products and services through targeted calling campaigns.", icon: "bi-megaphone" }
-        ]
-      },
-      "chat-support": {
-        title: "Chat Support Services",
-        shortIntro: "Provide real-time customer assistance through live chat, website chat, WhatsApp, and other messaging platforms.",
-        image: "assets/img/services/services-11.webp",
-        badge: "Real-Time Assistance",
-        featuresTitle: "Our Chat Support Services",
-        features: [
-          { title: "Live Chat Support", desc: "Providing real-time assistance to website and platform visitors.", icon: "bi-chat-dots" },
-          { title: "Customer Query Handling", desc: "Answering customer questions quickly and professionally.", icon: "bi-question-circle" },
-          { title: "Product & Service Assistance", desc: "Helping customers understand products, services, features, and processes.", icon: "bi-info-circle" },
-          { title: "Order Support", desc: "Assisting customers with order-related questions and updates.", icon: "bi-cart-check" },
-          { title: "Technical Issue Assistance", desc: "Providing first-level support for common technical issues.", icon: "bi-wrench" },
-          { title: "Chat Ticket Management", desc: "Managing, tracking, and escalating customer support requests when required.", icon: "bi-ticket-detailed" }
-        ]
-      },
-      "email-support": {
-        title: "Email Support Services",
-        shortIntro: "Manage customer emails, respond to queries, resolve issues, and maintain professional communication.",
+      "technical-support-services": {
+        title: "Technical Support Services",
+        shortIntro: "Our technical helpdesk provides L1 and L2 support to handle product troubleshooting, software assistance, and IT issue resolution. We ensure minimal downtime and reliable technical guidance for your users.",
         image: "assets/img/services/services-7.webp",
-        badge: "Professional Response",
-        featuresTitle: "Our Email Support Services",
+        badge: "L1 & L2 Helpdesk",
+        featuresTitle: "Technical Support Capabilities",
         features: [
-          { title: "Customer Query Management", desc: "Responding to customer questions and requests via email.", icon: "bi-envelope" },
-          { title: "Support Ticket Handling", desc: "Managing and resolving customer support tickets efficiently.", icon: "bi-tags" },
-          { title: "Complaint Resolution", desc: "Handling customer complaints with clear and professional communication.", icon: "bi-patch-check" },
-          { title: "Order & Account Support", desc: "Assisting with orders, accounts, payments, and other customer requests.", icon: "bi-person-circle" },
-          { title: "Follow-Up Emails", desc: "Sending follow-up communications to ensure customer satisfaction.", icon: "bi-reply-all" },
-          { title: "Email Escalation Management", desc: "Escalating complex issues to the appropriate team when necessary.", icon: "bi-arrow-right-short" }
+          { title: "Tier 1 (L1) Support Helpdesk", desc: "First-line troubleshooting, user guidance, account setup, and common technical issue resolution.", icon: "bi-headset" },
+          { title: "Tier 2 (L2) Technical Assistance", desc: "Deep diagnostics, advanced software assistance, system configuration, and escalated problem solving.", icon: "bi-wrench-adjustable" },
+          { title: "Product & Software Guidance", desc: "Guiding end-users through SaaS platforms, mobile applications, and software installations.", icon: "bi-laptop" },
+          { title: "Remote Troubleshooting", desc: "Secure remote desktop access to diagnose and fix software glitches quickly and safely.", icon: "bi-display" },
+          { title: "Incident Ticket Management", desc: "Structured incident tracking, SLA adherence, and smooth escalation pathways to engineering teams.", icon: "bi-ticket-detailed" },
+          { title: "Knowledge Base Creation", desc: "Developing user-friendly FAQs, SOPs, and self-serve technical documentation for rapid answers.", icon: "bi-book" }
         ]
       },
-      "back-office-support": {
-        title: "Back Office Support Services",
-        shortIntro: "Handle order processing, documentation, coordination, administrative tasks, and other business operations.",
+      "back-office-operations-support": {
+        title: "Back Office & Operations Support",
+        shortIntro: "Streamline your daily operational workflows with our scalable back-office solutions. From document verification and order processing to general administrative management, we keep your business operations running efficiently.",
         image: "assets/img/services/back-office-support.jpg",
-        badge: "Operations Support",
-        featuresTitle: "Our Back Office Services",
+        badge: "Operational Excellence",
+        featuresTitle: "Our Back Office & Operations Services",
         features: [
-          { title: "Data Processing", desc: "Processing and organizing business information accurately.", icon: "bi-clipboard-data" },
-          { title: "Document Management", desc: "Managing digital documents, records, and business files.", icon: "bi-file-earmark-text" },
-          { title: "Order Processing", desc: "Supporting order entry, verification, updates, and processing.", icon: "bi-bag-check" },
-          { title: "CRM Management", desc: "Updating customer information and maintaining accurate CRM records.", icon: "bi-database" },
-          { title: "Administrative Support", desc: "Handling routine administrative and operational tasks.", icon: "bi-briefcase" },
-          { title: "Reporting & Documentation", desc: "Preparing reports, records, and business documentation.", icon: "bi-file-spreadsheet" }
+          { title: "Order Processing & Fulfillment", desc: "Accurate verification, processing, tracking, and coordination of customer orders.", icon: "bi-bag-check" },
+          { title: "Document Verification & KYC", desc: "Thorough identity verification, record checks, and regulatory documentation screening.", icon: "bi-shield-check" },
+          { title: "Administrative Workflow Management", desc: "Scheduling, calendar coordination, document preparation, and business record-keeping.", icon: "bi-briefcase" },
+          { title: "Vendor & Partner Coordination", desc: "Facilitating communication, order status follow-ups, and coordination with suppliers.", icon: "bi-people" },
+          { title: "CRM & System Administration", desc: "Maintaining accurate customer records, updating company portals, and managing data workflows.", icon: "bi-database" },
+          { title: "Quality Auditing & Reporting", desc: "Routine process audits and management reports to ensure consistent operational standards.", icon: "bi-clipboard-check" }
         ]
       },
-      "data-entry-management": {
-        title: "Data Entry & Management Services",
-        shortIntro: "Provide accurate data entry, data processing, database updating, record management, and data organization.",
+      "data-management-analytics": {
+        title: "Data Management & Analytics",
+        shortIntro: "We assist businesses in managing, structuring, and analyzing critical operational data. Our end-to-end data services include accurate data entry, data cleaning, mining, and actionable business reporting.",
         image: "assets/img/services/data-entry-management.jpg",
-        badge: "High Accuracy",
-        featuresTitle: "Our Data Services",
+        badge: "High Accuracy & Insights",
+        featuresTitle: "Our Data Management Solutions",
         features: [
-          { title: "Data Entry", desc: "Entering business information accurately into systems, spreadsheets, or databases.", icon: "bi-keyboard" },
-          { title: "Data Cleansing", desc: "Identifying and correcting inaccurate, duplicate, or outdated data.", icon: "bi-trash" },
-          { title: "Data Validation", desc: "Checking data for accuracy, completeness, and consistency.", icon: "bi-shield-check" },
-          { title: "Database Management", desc: "Organizing and maintaining structured business databases.", icon: "bi-server" },
-          { title: "Data Conversion", desc: "Converting data between different formats and systems.", icon: "bi-arrow-left-right" },
-          { title: "CRM Data Updates", desc: "Updating customer and business information within CRM platforms.", icon: "bi-person-vcard" }
+          { title: "High-Accuracy Data Entry", desc: "Fast and error-free digitization of handwritten, digital, and multi-format business records.", icon: "bi-keyboard" },
+          { title: "Data Cleansing & Deduplication", desc: "Detecting and correcting corrupt, inaccurate, incomplete, or duplicate records.", icon: "bi-trash" },
+          { title: "Data Mining & Extraction", desc: "Extracting valuable business intelligence and contact lists from structured and unstructured sources.", icon: "bi-search" },
+          { title: "Database Structuring & Maintenance", desc: "Organizing records into clean, searchable, and secure database architectures.", icon: "bi-server" },
+          { title: "Business Reporting & Dashboards", desc: "Transforming raw data into clear, actionable executive summaries and performance metrics.", icon: "bi-bar-chart-line" },
+          { title: "Data Security & Compliance", desc: "Strict data privacy protocols and encryption standards to safeguard sensitive business assets.", icon: "bi-lock" }
         ]
       },
-      "digital-support-solutions": {
-        title: "Web & Digital Solutions",
-        shortIntro: "Deliver modern website design and development, ongoing digital maintenance, online business assistance, and technology-enabled solutions to elevate your digital presence.",
+      "sales-telemarketing-solutions": {
+        title: "Sales & Telemarketing Solutions",
+        shortIntro: "Accelerate your revenue growth with proactive outbound sales campaigns, high-quality lead generation, appointment scheduling, and customer acquisition services tailored to your market needs.",
+        image: "assets/img/services/services-2.webp",
+        badge: "Revenue Growth",
+        featuresTitle: "Our Sales & Telemarketing Offerings",
+        features: [
+          { title: "Outbound Sales Campaigns", desc: "Trained sales agents communicating your value proposition and closing prospective deals.", icon: "bi-telephone-outbound" },
+          { title: "B2B & B2C Lead Generation", desc: "Targeted outreach to identify and engage high-potential business opportunities.", icon: "bi-funnel" },
+          { title: "Appointment Setting", desc: "Pre-qualifying prospects and scheduling warm sales meetings for your closing representatives.", icon: "bi-calendar-check" },
+          { title: "Lead Qualification (MQL to SQL)", desc: "Filtering inquiries based on budget, authority, need, and urgency to save sales team time.", icon: "bi-check2-circle" },
+          { title: "Telemarketing & Promotions", desc: "Strategic telephone marketing campaigns designed to create brand awareness and drive sales.", icon: "bi-megaphone" },
+          { title: "Customer Follow-Up & Re-engagement", desc: "Nurturing lukewarm leads and re-engaging past clients to maximize lifetime customer value.", icon: "bi-arrow-repeat" }
+        ]
+      },
+      "digital-web-solutions": {
+        title: "Digital & Web Solutions",
+        shortIntro: "Strengthen your online footprint through ongoing website maintenance, digital marketing support, content moderation, and basic graphic and SEO support designed to enhance your online presence.",
         image: "assets/img/services/services-7.webp",
-        badge: "Digital Growth",
-        featuresTitle: "Our Web & Digital Solutions",
+        badge: "Digital Footprint",
+        featuresTitle: "Our Digital & Web Services",
         features: [
-          { title: "Website Design & Development", desc: "Creating modern, responsive, and user-friendly websites tailored to your brand and business goals.", icon: "bi-laptop" },
-          { title: "Website Maintenance & Support", desc: "Providing regular updates, troubleshooting, performance optimization, and technical support.", icon: "bi-gear" },
-          { title: "UI/UX & Landing Pages", desc: "Designing attractive layouts and high-converting landing pages for your products and services.", icon: "bi-code-slash" },
-          { title: "Online Business Assistance", desc: "Supporting digital operations, catalogue/e-commerce listings, and online presence.", icon: "bi-globe" },
-          { title: "Tech-Enabled Solutions", desc: "Deploying and managing modern technology tools to streamline your business workflows.", icon: "bi-cpu" },
-          { title: "Content & Asset Updates", desc: "Managing updates of digital content, graphics, banners, and online resources.", icon: "bi-file-earmark-text" }
+          { title: "Website Maintenance & Support", desc: "Regular updates, bug fixes, uptime monitoring, and ongoing technical maintenance.", icon: "bi-laptop" },
+          { title: "Digital Marketing Assistance", desc: "Managing social campaigns, email broadcasts, newsletter dispatches, and online ads.", icon: "bi-megaphone" },
+          { title: "Content Moderation", desc: "Protecting your community by reviewing user comments, forum posts, images, and reviews 24/7.", icon: "bi-shield-shaded" },
+          { title: "SEO & Content Optimization", desc: "On-page keyword updates, meta descriptions, and structural audits to improve search ranking.", icon: "bi-search" },
+          { title: "Graphic & Asset Creation", desc: "Designing banners, promotional graphics, social media posts, and digital marketing collaterals.", icon: "bi-palette" },
+          { title: "Online Catalogue Management", desc: "Uploading products, writing accurate descriptions, and updating pricing across e-channels.", icon: "bi-globe" }
         ]
       },
-      "sales-marketing-services": {
-        title: "Sales & Marketing Services",
-        shortIntro: "Support lead generation, tele-sales, customer follow-ups, appointment setting, and sales activities.",
-        image: "assets/img/services/services-8.webp",
-        badge: "Business Growth",
-        featuresTitle: "Our Sales & Marketing Services",
+      "finance-accounting-outsourcing": {
+        title: "Finance & Accounting Outsourcing (FAO)",
+        shortIntro: "Ensure accuracy and compliance across your financial functions with bookkeeping, payroll processing, invoicing, and accounts payable and receivable management.",
+        image: "assets/img/services/services-11.webp",
+        badge: "Accuracy & Compliance",
+        featuresTitle: "Our Finance & Accounting Solutions",
         features: [
-          { title: "Lead Generation", desc: "Identifying and connecting businesses with potential customers.", icon: "bi-graph-up-arrow" },
-          { title: "Lead Qualification", desc: "Evaluating leads to identify genuine and interested prospects.", icon: "bi-funnel" },
-          { title: "Appointment Setting", desc: "Scheduling meetings, consultations, demos, or sales calls with potential clients.", icon: "bi-calendar-check" },
-          { title: "Outbound Sales Calling", desc: "Contacting potential customers to introduce products or services and generate sales opportunities.", icon: "bi-telephone-outbound" },
-          { title: "Sales Follow-Up", desc: "Following up with interested prospects to move them closer to a purchase decision.", icon: "bi-person-check" },
-          { title: "Telemarketing", desc: "Promoting products and services through targeted calling campaigns.", icon: "bi-megaphone" },
-          { title: "Email Marketing Support", desc: "Supporting marketing campaigns through customer outreach and follow-up emails.", icon: "bi-envelope-paper" },
-          { title: "Customer Retention & Re-Engagement", desc: "Engaging existing or inactive customers to improve retention and repeat business.", icon: "bi-people" }
+          { title: "Bookkeeping & General Ledger", desc: "Daily financial transaction entry, journal tracking, and general ledger maintenance.", icon: "bi-journal-check" },
+          { title: "Accounts Payable (AP)", desc: "Vendor invoice matching, purchase order verification, payment approvals, and scheduling.", icon: "bi-credit-card" },
+          { title: "Accounts Receivable (AR)", desc: "Customer invoice generation, payment allocation, aging report monitoring, and collections follow-ups.", icon: "bi-receipt" },
+          { title: "Payroll Processing", desc: "Accurate salary calculations, employee deductions, tax withholdings, and timely disbursement.", icon: "bi-people" },
+          { title: "Bank & Account Reconciliation", desc: "Monthly reconciliations of bank statements, merchant accounts, and credit card balances.", icon: "bi-cash-stack" },
+          { title: "Financial Reporting & MIS", desc: "Comprehensive P&L summaries, balance sheets, cash flow tracking, and management reports.", icon: "bi-file-earmark-spreadsheet" }
         ]
       }
     };
@@ -504,9 +482,24 @@
       const params = new URLSearchParams(window.location.search);
       let serviceKey = params.get('service');
       
-      // Default to customer-support if not found or invalid
+      // Backward compatibility aliases for old links
+      const aliases = {
+        "customer-support": "customer-experience-services",
+        "telecalling-services": "sales-telemarketing-solutions",
+        "chat-support": "customer-experience-services",
+        "email-support": "customer-experience-services",
+        "back-office-support": "back-office-operations-support",
+        "data-entry-management": "data-management-analytics",
+        "digital-support-solutions": "digital-web-solutions",
+        "sales-marketing-services": "sales-telemarketing-solutions"
+      };
+      if (serviceKey && aliases[serviceKey]) {
+        serviceKey = aliases[serviceKey];
+      }
+
+      // Default to customer-experience-services if not found or invalid
       if (!serviceKey || !servicesData[serviceKey]) {
-        serviceKey = 'customer-support';
+        serviceKey = 'customer-experience-services';
       }
 
       const data = servicesData[serviceKey];
