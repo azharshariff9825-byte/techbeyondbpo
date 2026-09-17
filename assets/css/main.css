@@ -553,8 +553,8 @@ h6 {
   position: fixed;
   visibility: hidden;
   opacity: 0;
-  right: 31px;
-  bottom: 90px;
+  right: 34px;
+  bottom: 98px;
   z-index: 9998;
   background-color: var(--accent-color);
   width: 44px;
@@ -577,16 +577,16 @@ h6 {
 .scroll-top.active {
   visibility: visible;
   opacity: 1;
-  bottom: 90px;
+  bottom: 98px;
 }
 
 @media (max-width: 768px) {
   .scroll-top {
-    right: 24px;
-    bottom: 82px;
+    right: 26px;
+    bottom: 86px;
   }
   .scroll-top.active {
-    bottom: 82px;
+    bottom: 86px;
   }
 }
 
@@ -597,44 +597,87 @@ h6 {
   position: fixed;
   bottom: 25px;
   right: 25px;
-  width: 56px;
-  height: 56px;
+  width: 62px;
+  height: 62px;
   background-color: #25D366;
   color: #ffffff;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 15px rgba(37, 211, 102, 0.45);
   z-index: 9999;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
   text-decoration: none;
+  animation: whatsapp-pulse 2.2s infinite ease-in-out;
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .whatsapp-float svg {
-  width: 32px;
-  height: 32px;
+  width: 38px;
+  height: 38px;
   fill: #ffffff;
   display: block;
+  transform-origin: center center;
+  animation: whatsapp-wiggle 3s infinite ease-in-out;
 }
 
 .whatsapp-float:hover {
   background-color: #20ba59;
   color: #ffffff;
+  transform: scale(1.12);
+  animation: none;
+  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.7);
+}
+
+.whatsapp-float:hover svg {
+  animation: none;
   transform: scale(1.08);
-  box-shadow: 0 6px 22px rgba(37, 211, 102, 0.65);
+}
+
+/* Continuous glowing radar pulse */
+@keyframes whatsapp-pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.75), 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  65% {
+    box-shadow: 0 0 0 16px rgba(37, 211, 102, 0), 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0), 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+}
+
+/* Attention-grabbing ring/vibration effect */
+@keyframes whatsapp-wiggle {
+  0%, 100% {
+    transform: rotate(0deg) scale(1);
+  }
+  8% {
+    transform: rotate(-12deg) scale(1.06);
+  }
+  12% {
+    transform: rotate(12deg) scale(1.06);
+  }
+  16% {
+    transform: rotate(-10deg) scale(1.06);
+  }
+  20% {
+    transform: rotate(10deg) scale(1.06);
+  }
+  24% {
+    transform: rotate(0deg) scale(1);
+  }
 }
 
 @media (max-width: 768px) {
   .whatsapp-float {
     bottom: 20px;
     right: 20px;
-    width: 52px;
-    height: 52px;
+    width: 56px;
+    height: 56px;
   }
   .whatsapp-float svg {
-    width: 30px;
-    height: 30px;
+    width: 34px;
+    height: 34px;
   }
 }
 
